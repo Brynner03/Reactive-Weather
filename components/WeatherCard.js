@@ -4,6 +4,7 @@ import sunny from "../assets/Sunny.svg";
 function WeatherCard({ data, title }) {
   return (
     <div className="card">
+      {/* Conditionally render the title, if provided, above the weather icon */}
       {title && <h2 className="card-title">{title}</h2>}
       <div className="img-container">
         <img className="card-img-top" src={sunny} alt="Card image cap" id="icon" />
